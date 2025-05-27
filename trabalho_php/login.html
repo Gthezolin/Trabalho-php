@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Formulário de Login -->
+    <div class="form-container login-container">
+        <form id="loginForm" action="login.php" method="POST">
+            <h1>Entrar</h1>
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <p class="error" id="loginError"></p>
+        </form>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <div class="form-container register-container">
+        <form id="registerForm">
+            <h1>Cadastrar</h1>
+            <input type="text" placeholder="Nome de usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Overlay para a transição 3D -->
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Bem-vindo de volta!</h1>
+                <p>Para se manter conectado, por favor faça login com suas informações pessoais</p>
+                <button class="ghost" id="loginButton">Entrar</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Olá, Cliente!</h1>
+                <p>Insira seus dados pessoais e comece uma nova vida usando nosso site.</p>
+                <button class="ghost" id="registerButton">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
